@@ -8,7 +8,7 @@ class Bid(Bidder):
 
         #Initializes the bidder parameters.
 
-        self.bidRatio = 50  # Ratio of bidding in percent
+        self.bid_ratio = 50  # Ratio of bidding in percent
         self.fixedBidPrice = 300  # Fixed bid price
         # Other model-related variables can be defined here
         # self.model: dict[str, str] = {}
