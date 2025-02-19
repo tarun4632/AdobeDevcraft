@@ -137,7 +137,7 @@ By integrating GBMs and Logistic Regression, we leverage the unique strengths of
 
 2. **Modified FAB:**  
    - **Policy Replacement:** Instead of using complex neural models, we employ an ensemble of Linear and Polynomial Regression to approximate Q-values or direct bidding signals.  
-   - **Reduced Latency:** This approach avoids heavy matrix operations, ensuring real-time decision-making within <30ms.
+   - **Reduced Latency:** This approach avoids heavy matrix operations, ensuring real-time decision-making within <3ms.
 
 3. **Adaptive Bid Flow:**  
    - Modulates bidding aggression based on remaining budget and campaign time:
@@ -154,7 +154,7 @@ By integrating GBMs and Logistic Regression, we leverage the unique strengths of
 ## 7. Hyperparameter Tuning
 
 - **GBMs (LightGBM / XGBoost):**  
-  - Use grid search or Bayesian optimization to tune learning rate, max_depth, and n_estimators, with early stopping based on validation AUC.
+  - Use Grid search or Bayesian optimization to tune learning rate, max_depth, and n_estimators, with early stopping based on validation AUC.
 
 - **Logistic Regression:**  
   - Tune the regularization parameter (C) to manage the bias-variance trade-off.
