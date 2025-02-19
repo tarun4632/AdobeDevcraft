@@ -49,6 +49,13 @@ To implement the bidder interface, we first recommend initializing a virtual env
    ordinal_bidder_bid = bidding_agent.getBidPrice(bidRequest)
    ```
 
+6. EvaluationApp
+   To test the performance and measure execution time, use the `EvaluationApp` module:
+   ```sh
+   python evaluationApp.py --budjet_set <set number>
+   ```
+This will run performance tests and display execution times for different parts of the application.
+
 ---
 
 ## 3. Approach Description
