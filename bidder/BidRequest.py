@@ -1,186 +1,168 @@
+#!/usr/bin/python
+# -*- coding:utf8 -*-
 
-
-
-
-class BidRequest:
-    serialVersionUID = -3012027079030559912
+class BidRequest(object):
     def __init__(self):
-        self.bidId = None
-        self.timestamp = None
-        self.visitorId = None
-        self.userAgent = None
-        self.ipAddress = None
-        self.region = None
-        self.city = None
-        self.adExchange = None
-        self.domain = None
-        self.url = None
-        self.anonymousURLID = None
-        self.adSlotID = None
-        self.adSlotWidth = None
-        self.adSlotHeight = None
-        self.adSlotVisibility = None
-        self.adSlotFormat = None
-        self.adSlotFloorPrice = None
-        self.creativeID = None
-        self.advertiserId = None
-        self.userTags = None
+        self.bid_id = ""
+        self.timestamp = ""
+        self.visitor_id = ""
+        self.user_agent = ""
+        self.ip_address = ""
+        self.region = ""
+        self.city = ""
+        self.ad_exchange = ""
+        self.domain = ""
+        self.url = ""
+        self.anonymous_url_id = ""
+        self.ad_slot_id = ""
+        self.ad_slot_width = ""
+        self.ad_slot_height = ""
+        self.ad_slot_visibility = ""
+        self.ad_slot_format = ""
+        self.ad_slot_floor_price = ""
+        self.creative_id = ""
+        self.advertiser_id = ""
+        self.user_tags = ""
 
-    def getBidId(self) -> str:
-        return self.bidId
-    
-    
-    def setBidId(self, bidId: str):
-        self.bidId = bidId
+    def get_bid_id(self):
+        return self.bid_id
 
-    
-    def getTimestamp(self) -> str:
+    def set_bid_id(self, bid_id):
+        self.bid_id = bid_id
+
+    def get_timestamp(self):
         return self.timestamp
-    
-    
-    def setTimestamp(self, timestamp: str):
+
+    def set_timestamp(self, timestamp):
         self.timestamp = timestamp
 
-    
-    def getVisitorId(self) -> str:
-        return self.visitorId
-    
-    
-    def setVisitorId(self, visitorId: str):
-        self.visitorId = visitorId
+    def get_visitor_id(self):
+        return self.visitor_id
 
-    
-    def getUserAgent(self) -> str:
-        return self.userAgent
-    
+    def set_visitor_id(self, visitor_id):
+        self.visitor_id = visitor_id
 
-    def setUserAgent(self, userAgent: str):
-        self.userAgent = userAgent
+    def get_user_agent(self):
+        return self.user_agent
 
+    def set_user_agent(self, user_agent):
+        self.user_agent = user_agent
 
-    def getIpAddress(self) -> str:
-        return self.ipAddress
-    
+    def get_ip_address(self):
+        return self.ip_address
 
-    def setIpAddress(self, ipAddress: str):
-        self.ipAddress = ipAddress
+    def set_ip_address(self, ip_address):
+        self.ip_address = ip_address
 
-
-    def getRegion(self) -> str:
+    def get_region(self):
         return self.region
-    
 
-    def setRegion(self, region: str):
+    def set_region(self, region):
         self.region = region
 
-    
-    def getCity(self) -> str:
-        return self.city    
-    
+    def get_city(self):
+        return self.city
 
-    def setCity(self, city: str):
+    def set_city(self, city):
         self.city = city
 
+    def get_ad_exchange(self):
+        return self.ad_exchange
 
-    def getAdExchange(self) -> str:    
-        return self.adExchange
-    
+    def set_ad_exchange(self, ad_exchange):
+        self.ad_exchange = ad_exchange
 
-    def setAdExchange(self, adExchange: str):  
-        self.adExchange = adExchange
-
-    
-    def getDomain(self) -> str:    
+    def get_domain(self):
         return self.domain
-    
 
-    def setDomain(self, domain: str):    
+    def set_domain(self, domain):
         self.domain = domain
 
-
-    def getUrl(self) -> str:    
+    def get_url(self):
         return self.url
-    
 
-    def setUrl(self, url: str):    
+    def set_url(self, url):
         self.url = url
 
+    def get_anonymous_url_id(self):
+        return self.anonymous_url_id
 
-    def getAnonymousURLID(self) -> str:    
-        return self.anonymousURLID
-    
+    def set_anonymous_url_id(self, anonymous_url_id):
+        self.anonymous_url_id = anonymous_url_id
 
-    def setAnonymousURLID(self, anonymousURLID: str):    
-        self.anonymousURLID = anonymousURLID
+    def get_ad_slot_id(self):
+        return self.ad_slot_id
 
+    def set_ad_slot_id(self, ad_slot_id):
+        self.ad_slot_id = ad_slot_id
 
-    def getAdSlotID(self) -> str:    
-        return self.adSlotID
-    
+    def get_ad_slot_width(self):
+        return self.ad_slot_width
 
-    def setAdSlotID(self, adSlotID: str):    
-        self.adSlotID = adSlotID
+    def set_ad_slot_width(self, ad_slot_width):
+        self.ad_slot_width = ad_slot_width
 
+    def get_ad_slot_height(self):
+        return self.ad_slot_height
 
-    def getAdSlotWidth(self) -> str:    
-        return self.adSlotWidth
-    
+    def set_ad_slot_height(self, ad_slot_height):
+        self.ad_slot_height = ad_slot_height
 
-    def setAdSlotWidth(self, adSlotWidth: str):   
-        self.adSlotWidth = adSlotWidth
+    def get_ad_slot_visibility(self):
+        return self.ad_slot_visibility
 
+    def set_ad_slot_visibility(self, ad_slot_visibility):
+        self.ad_slot_visibility = ad_slot_visibility
 
-    def getAdSlotHeight(self) -> str:   
-        return self.adSlotHeight
-    
+    def get_ad_slot_format(self):
+        return self.ad_slot_format
 
-    def setAdSlotHeight(self, adSlotHeight: str):
-        self.adSlotHeight = adSlotHeight
+    def set_ad_slot_format(self, ad_slot_format):
+        self.ad_slot_format = ad_slot_format
 
+    def get_ad_slot_floor_price(self):
+        return self.ad_slot_floor_price
 
-    def getAdSlotVisibility(self) -> str:
-        return self.adSlotVisibility
-    
+    def set_ad_slot_floor_price(self, ad_slot_floor_price):
+        self.ad_slot_floor_price = ad_slot_floor_price
 
-    def setAdSlotVisibility(self, adSlotVisibility: str):
-        self.adSlotVisibility = adSlotVisibility
+    def get_creative_id(self):
+        return self.creative_id
 
+    def set_creative_id(self, creative_id):
+        self.creative_id = creative_id
 
-    def getAdSlotFormat(self) -> str:
-        return self.adSlotFormat
-    
+    def get_advertiser_id(self):
+        return self.advertiser_id
 
-    def setAdSlotFormat(self, adSlotFormat: str):
-        self.adSlotFormat = adSlotFormat
+    def set_advertiser_id(self, advertiser_id):
+        self.advertiser_id = advertiser_id
 
+    def get_user_tags(self):
+        return self.user_tags
 
-    def getAdSlotFloorPrice(self) -> str:
-        return self.adSlotFloorPrice
-    
+    def set_user_tags(self, user_tags):
+        self.user_tags = user_tags
 
-    def setAdSlotFloorPrice(self, adSlotFloorPrice: str):
-        self.adSlotFloorPrice = adSlotFloorPrice
-
-
-    def getCreativeID(self) -> str:
-        return self.creativeID
-    
-
-    def setCreativeID(self, creativeID: str):
-        self.creativeID = creativeID
-
-
-    def getAdvertiserId(self) -> str:   
-        return self.advertiserId 
-    
-
-    def setAdvertiserId(self, advertiserId: str):
-        self.advertiserId = advertiserId
-
-
-    def getUserTags(self) -> str:
-        return self.userTags
-    
-
-    def setUserTags(self, userTags: str):
-        self.userTags = userTags
+    def set_all_values(self, line):
+        fields = line.strip().split("\t")
+        self.bid_id = fields[0]
+        self.timestamp = fields[1]
+        self.visitor_id = fields[3]
+        self.user_agent = fields[4]
+        self.ip_address = fields[5]
+        self.region = fields[6]
+        self.city = fields[7]
+        self.ad_exchange = fields[8]
+        self.domain = fields[9]
+        self.url = fields[10]
+        self.anonymous_url_id = fields[11]
+        self.ad_slot_id = fields[12]
+        self.ad_slot_width = fields[13]
+        self.ad_slot_height = fields[14]
+        self.ad_slot_visibility = fields[15]
+        self.ad_slot_format = fields[16]
+        self.ad_slot_floor_price = fields[17]
+        self.creative_id = fields[18]
+        self.advertiser_id = fields[19]
+        self.user_tags = fields[20]
